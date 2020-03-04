@@ -164,6 +164,15 @@ h2:hover {
 .indicators__block__variable__font__second {
   margin-bottom: 0.7em;
 }
+.indicators__block__variable__font__plus {
+  display: inline-block;
+  position: relative;
+}
+.indicators__block__variable__font__plus::before {
+  content: "+";
+  position: absolute;
+  top: -60px;
+}
 .indicators__block__description a {
   color: #b70021;
 }
