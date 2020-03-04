@@ -36,6 +36,10 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   color: #b70021;
+  transition: all 0.2s;
+}
+h2:hover {
+  text-shadow: 1px 1px 1px #ffffff;
 }
 .header {
   position: absolute;
@@ -134,7 +138,7 @@ h2 {
 .indicators__block__variable__font__second {
   margin-bottom: 0.7em;
 }
-.indicators__block__description {
+.indicators__block__description a {
   color: #b70021;
 }
 /* video */
@@ -212,6 +216,17 @@ h2 {
 .footer-button {
   margin: 83px 0;
 }
+.footer-button__btn {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 30px 62px;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.5s;
+}
+.footer-button__btn:hover {
+  color: #ff0800;
+  box-shadow: 10px 10px 10px #000000;
+}
 .footer-navigation ul {
   display: flex;
   flex-direction: row;
@@ -220,4 +235,8 @@ h2 {
 }
 .footer-navigation li {
   margin-left: 10px;
+}
+.footer-navigation a:hover {
+  text-shadow: 10px 10px 10px #0b0b0b;
+  color: #d3d3d3;
 }
