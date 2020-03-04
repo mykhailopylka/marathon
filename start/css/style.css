@@ -10,10 +10,9 @@ body {
   max-width: 100%;
   background: #0b0b0b;
   color: #ffffff;
-  font-family: droid_serifregular;
+  font-family: roboto_condensedregular;
   font-size: 24px;
   line-height: 28px;
-  font-family: roboto-condenset;
   font-weight: 400;
   /* font-family: roboto; */
 }
@@ -30,7 +29,7 @@ a {
   text-decoration: none;
 }
 h2 {
-  font-family: Roboto_Condensed;
+  font-family: roboto_condensedregular;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -85,7 +84,7 @@ h2:hover {
   color: #770302;
 }
 .header-content__title {
-  font-family: robota;
+  font-family: robotoregular;
   font-size: 96px;
   line-height: 112px;
   margin-bottom: 40px;
@@ -134,6 +133,8 @@ h2:hover {
 .indicators__block__variable__font {
   font-size: 96px;
   line-height: 112px;
+  margin-left: 30px;
+  font-family: robotoregular;
 }
 .indicators__block__variable__font__second {
   margin-bottom: 0.7em;
@@ -235,6 +236,7 @@ h2:hover {
 }
 .footer-navigation li {
   margin-left: 10px;
+  font-family: roboto_condensedbold;
 }
 .footer-navigation a:hover {
   text-shadow: 10px 10px 10px #0b0b0b;
