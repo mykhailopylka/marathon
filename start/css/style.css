@@ -149,6 +149,7 @@ h2:hover {
 }
 .menu__list ul {
   list-style: none;
+  padding-top: 5em;
 }
 .menu__list a {
   display: inline-block;
@@ -349,5 +350,16 @@ h2:hover {
     font-size: 70px;
     margin-top: 20px;
     line-height: 85px;
+  }
+  .menu__list a {
+    display: block;
+    font-size: 30px;
+    line-height: 44px;
+    padding: 19px 10px 7px 0;
+    max-width: 100%;
+    margin-top: 100px;
+  }
+  .menu__list ul {
+    width: 100%;
   }
 }
