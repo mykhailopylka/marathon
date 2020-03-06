@@ -70,14 +70,12 @@ h2:hover {
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
-
 .header-btn__menus {
   text-align: center;
   margin: 15px auto;
   font-size: 3.5em;
   font-weight: 400;
 }
-
 .fa-bars {
   margin: 10px 14px;
   font-size: 1.5em;
@@ -103,6 +101,71 @@ h2:hover {
 .header-content__btn:hover {
   background: #770302;
   border: 1px solid #770302;
+}
+/* menu================================= */
+.menu {
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 4;
+}
+.menu.active {
+  left: 0;
+}
+.conteiner-menu {
+  position: relative;
+}
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 15px;
+  top: 31px;
+  cursor: pointer;
+}
+.close-btn::after,
+.close-btn::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ffffff;
+  transform-origin: left;
+}
+.close-btn::after {
+  transform: rotate(45deg);
+}
+.close-btn::before {
+  transform: rotate(-45deg);
+  bottom: -1px;
+}
+.menu__list {
+  height: 100vh;
+  display: flex;
+  text-align: left;
+}
+.menu__list ul {
+  list-style: none;
+}
+.menu__list a {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bold;
+  padding: 30px 25px 14px 0;
+  border-bottom: 3px solid #770302;
+  max-width: 368px;
+  width: 100%;
+}
+.menu__list a:hover {
+  border-color: #ffffff;
+  color: #770302;
+  transition: all 0.5s;
+  transform: scale(1.1);
+  margin-left: 37px;
 }
 /* slick slider =============================== */
 .slider__item {
@@ -133,7 +196,8 @@ h2:hover {
   margin: -55px auto 0;
   position: relative;
   z-index: 3;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
 }
 /* main========================================= */
 /* indicators============ */
@@ -179,7 +243,7 @@ h2:hover {
 /* video */
 .video {
   margin: 0 auto;
-  max-height: 400px;
+  height: 400px;
   /* width: 100%; */
 }
 /*  discribe =============================*/
@@ -275,4 +339,15 @@ h2:hover {
 .footer-navigation a:hover {
   text-shadow: 10px 10px 10px #0b0b0b;
   color: #d3d3d3;
+}
+
+@media (max-width: 410) {
+  .logo img {
+    width: 200px;
+  }
+  .header-content__title {
+    font-size: 70px;
+    margin-top: 20px;
+    line-height: 85px;
+  }
 }
